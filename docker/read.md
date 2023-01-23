@@ -17,7 +17,7 @@
 
 		docker-compose up -d	
 
-# 5 - Docker-Compose UP Build (Iniciar containners recriando)
+# 5 - Docker-Compose UP Build (Iniciar containers recriando)
 
 		docker-compose up -d --build 
 
