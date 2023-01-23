@@ -26,5 +26,6 @@
 		docker-compose down -t 0
 
 
-para acesso as pastas onde estão "D:/Projects/Development/Study/delphi/teste/firebird/data" e "D:/Projects/Development/Study/delphi/teste/Production"
-devem ser alteradas para a path que você salvou
+# OBS:
+	Para acesso as pastas onde estão "D:/Projects/Development/Study/delphi/teste/firebird/data" e "D:/Projects/Development/Study/delphi/teste/Production"
+	devem ser alteradas para a path que você salvou
