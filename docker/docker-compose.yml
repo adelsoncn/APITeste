@@ -1,0 +1,75 @@
+version: "3.9"
+
+volumes:
+  production:
+    external: true      
+    name: production
+  firebird4:
+    external: true
+    name: firebird4
+
+networks:
+    teste-network:
+      name: teste-network        
+      attachable: true
+      ipam:
+        driver: default
+        config:
+          - subnet: 172.18.0.0/16
+            ip_range: 172.18.5.0/24
+            gateway: 172.18.0.1        
+
+services:       
+  
+  firebird4:    
+    build: 
+      context: ./firebird
+      dockerfile: Dockerfile   
+      labels:
+        com.example.description: "Firebird4"
+        com.example.department: "Developer"
+    environment:
+      - "TZ=America/Sao_Paulo"
+      - "ISC_PASSWORD=masterkey"
+    tmpfs:
+      - /tmp:rw
+    ports:
+      - "3040:3050"
+    restart:
+      on-failure   
+    networks: 
+      - teste-network
+    volumes:
+      - "D:/Projects/Development/Study/delphi/teste/firebird/data:/firebird/data"
+      - "D:/Projects/Development/Study/delphi/teste/firebird/data:/firebird4"
+    hostname: server-firebird4
+    image: teste-firebird4
+    container_name: teste-firebird4
+
+  production:    
+    build: 
+      context: ./production-linux/
+      dockerfile: Dockerfile   
+      labels:
+        com.example.description: "Produção linux"
+        com.example.department: "Developer"
+    links:
+      - firebird4        
+    environment:
+      - Server=Server Linux
+    tmpfs:
+      - /tmp:rw        
+    ports:
+      - "9001:9000"
+    restart:
+      on-failure  
+    networks: 
+      - teste-network         
+    volumes:
+      - "D:/Projects/Development/Study/delphi/teste/Production:/production"
+    hostname: server-production
+    image: teste-production
+    container_name: teste-production
+    depends_on:
+      - firebird4
+  

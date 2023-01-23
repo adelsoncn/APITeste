@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/23 09:12:43.000.998,D:\Projects\Development\Study\Delphi\teste\TesteAPI.dproj=C:\Users\adels\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/01/23 09:14:05.000.716,=D:\Projects\Development\Study\Delphi\teste\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 09:14:30.000.369,D:\Projects\Development\Study\Delphi\teste\uConnection.pas=D:\Projects\Development\Study\Delphi\teste\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 09:14:50.000.866,=D:\Projects\Development\Study\Delphi\teste\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 09:17:31.000.574,D:\Projects\Development\Study\Delphi\teste\src\uDataModule.pas=D:\Projects\Development\Study\Delphi\teste\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 09:17:31.000.574,D:\Projects\Development\Study\Delphi\teste\src\uDataModule.dfm=D:\Projects\Development\Study\Delphi\teste\Unit1.dfm</Transaction>
+    <Transaction>2023/01/23 09:18:52.000.636,D:\Projects\Development\Study\Delphi\teste\uConnection.pas=</Transaction>
+    <Transaction>2023/01/23 09:35:39.000.967,=D:\Projects\Development\Study\Delphi\teste\src\uConnection.pas</Transaction>
+    <Transaction>2023/01/23 09:49:57.000.548,D:\Projects\Development\Study\Delphi\teste\src\uDataModule.pas=</Transaction>
+    <Transaction>2023/01/23 09:51:24.000.212,=D:\Projects\Development\Study\Delphi\teste\src\uDataModule.pas</Transaction>
+    <Transaction>2023/01/23 11:06:44.000.013,D:\Projects\Development\Study\Delphi\teste\TesteAPI.dproj=D:\Projects\Development\Study\Delphi\teste\APIs4LaL.dproj</Transaction>
+    <Transaction>2023/01/23 12:23:33.000.283,D:\Projects\Development\Study\Delphi\teste\APIs4LaL.dproj=D:\Projects\Development\Study\Delphi\teste\APITeste.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

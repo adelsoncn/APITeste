@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B71E7ADD-C27C-4E9B-AED6-EDBB71149DF3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="APITeste.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="APITeste">
+        <MSBuild Projects="APITeste.dproj"/>
+    </Target>
+    <Target Name="APITeste:Clean">
+        <MSBuild Projects="APITeste.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="APITeste:Make">
+        <MSBuild Projects="APITeste.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="APITeste"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="APITeste:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="APITeste:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

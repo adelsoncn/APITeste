@@ -1,0 +1,14 @@
+{
+	"name": "Teste",
+	"description": "",
+	"version": "1.0.0",
+	"homepage": "",
+	"mainsrc": "./src",
+	"projects": [],
+	"dependencies": {
+		"github.com/hashload/horse": "^3.0.2",
+		"github.com/hashload/jhonson": "^1.1.4",
+		"https://github.com/hashload/horse-compression": "^1.1.7",
+		"https://github.com/viniciussanchez/dataset-serialize": "^v2.4.8"
+	}
+}

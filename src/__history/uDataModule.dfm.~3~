@@ -1,0 +1,18 @@
+object DataModule1: TDataModule1
+  Height = 1080
+  Width = 1440
+  PixelsPerInch = 144
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'Database=/firebird/data/teste.fdb'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=127.0.0.1'
+      'Port=3040'
+      'DriverID=FB')
+    LoginPrompt = False
+    Left = 280
+    Top = 144
+  end
+end
